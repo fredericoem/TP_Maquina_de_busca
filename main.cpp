@@ -119,7 +119,7 @@ void cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, A
     map<string, vector<string>>::iterator it;
 
 
-    // laÁo que preenche as coordenadas da matriz documentos
+    // la√ßo que preenche as coordenadas da matriz documentos
     for(i=1; i<argc; i++)
     {
         for(it = auxmap.begin(); it != auxmap.end(); it++)
@@ -138,7 +138,7 @@ void cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, A
     n=0, j=0;
 
 
-    //laÁo que preenche as coordenadas da matriz pesquisa
+    //la√ßo que preenche as coordenadas da matriz pesquisa
     for(i=0; i<num; i++)
     {
             for(it = auxmap.begin(); it != auxmap.end(); it++)
@@ -155,13 +155,13 @@ void cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, A
                     vetorPalavrasPesquisadas[i][j] = 0;
                 }
                 j++;
-            }https://www.youtube.com/watch?v=v8-4rI0cJXE
+            }
 
             j=0;
     }
 
 
-    // laÁo auxiliar para calcular a similaridade a soma dos quadrados da matriz palavras pesquisada
+    // la√ßo auxiliar para calcular a similaridade a soma dos quadrados da matriz palavras pesquisada
     for(k=0; k<num; k++)
     {
             for(j=0; j<arquivo.indiceInvertidosize();j++)
@@ -173,14 +173,14 @@ void cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, A
     for(i=0; i<argc-1; i++)
     {
 
-        // laÁo auxiliar para calcular a similaridade a soma dos quadrados da matriz documentos
+        // la√ßo auxiliar para calcular a similaridade a soma dos quadrados da matriz documentos
         for(j=0;j<arquivo.indiceInvertidosize();j++)
         {
             aux1 = aux1 + pow(vetorDocumento[i][j], 2);
         }
 
 
-        // laÁo auxiliar para calcular a similaridade a soma dos produtos entre as matrizes documentos e palavras pesquisada
+        // la√ßo auxiliar para calcular a similaridade a soma dos produtos entre as matrizes documentos e palavras pesquisada
         for(k=0;k<num;k++)
         {
             for(j=0; j<arquivo.indiceInvertidosize();j++)
@@ -190,7 +190,7 @@ void cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, A
         }
 
 
-        // equaÁ„o da similaridade
+        // equa√ß√£o da similaridade
         similaridade[i] = aux3/(sqrt(aux1) * sqrt(aux2));
 
         aux1 = 0;
@@ -202,7 +202,7 @@ void cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, A
     map<float, string> ranking;
 
 
-    //impress„o da ordem de importancia em um documento no consine ranking
+    //impress√£o da ordem de importancia em um documento no consine ranking
     for(i=0; i<argc-1; i++)
     {
         ranking.insert(std::pair<float,string>(similaridade[i]*-1, argv[i+1]));
