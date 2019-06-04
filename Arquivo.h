@@ -50,6 +50,10 @@ namespace TpFinal
 			//
 
 			int indiceInvertidosize();
+		
+			void mostraResultado(vector<string> resultado);
+			
+			void cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, Arquivo arquivo);
 
 		private:
 			//
