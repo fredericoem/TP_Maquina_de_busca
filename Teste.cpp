@@ -1,0 +1,61 @@
+#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include "Arquivo.h"
+#include "doctest.h"
+
+#include <iostream>
+#include <vector>
+#include <map>
+#include <string>
+
+
+class Teste
+{
+public:
+
+  static string nomeArquivo(arquivo &c){
+     return c.nomeArquivo;
+  }
+};
+
+
+
+TEST_SUITE("Arquivo") {
+  TEST_CASE("Arquivo(string nomeArquivo)") {
+	  
+    Arquivo arquivo = Arquivo(Teste::nomeArquivo);
+	
+    CHECK_FALSE(if(arquivo.nullFile == 1);
+  }
+  
+  TEST_CASE("consultaPalavra(vector<string>& resultado, const string& palavra)"){
+	  
+	 Arquivo arquivo = Arquivo(Teste::nomeArquivo);
+	 
+	 CHECK(palavraPesquisada[quem] = "quem");
+	  
+  }
+  
+  
+  TESTE_CASE("contaPalavra(string palavra, string nomeArquivo")){
+	 Arquivo arquivo = Arquivo(Teste::nomeArquivo);
+	 
+	  CHECK( arquivo.contaPalavra("quem", Teste::nomeArquivo) >= 1);
+	 
+  }
+  
+  TESTE_CASE("map<string, vector<string>>  getindiceInvertido()"){
+	  
+	  
+	  
+  }
+  
+  TESTE_CASE("indiceInvertidosize()"){
+	  
+	  
+  }
+  
+  TESTE_CASE("cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, Arquivo arquivo);"){
+	  
+  }
+  
+}
