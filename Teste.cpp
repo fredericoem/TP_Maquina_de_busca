@@ -43,18 +43,25 @@ TEST_SUITE("Arquivo") {
 	 
   }
   
-  TESTE_CASE("map<string, vector<string>>  getindiceInvertido()"){
-	  
-	  
+  TESTE_CASE("map<string, vector<string>>"){
+	map<string, vector<string>> m;
+	m[teste] = "A"
+	m[teste2] = "B"
+		
+	 CHECK(m[teste] = "A");
+	 CHECK(m[teste2] = "B");
+	 
 	  
   }
   
-  TESTE_CASE("indiceInvertidosize()"){
-	  
-	  
-  }
   
   TESTE_CASE("cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, Arquivo arquivo);"){
+	Arquivo arquivo = Arquivo(Teste::nomeArquivo);
+	string palavraPesquisada[A];
+	
+	cosineRanking(int argc, int num, char *argv[], string *palavraPesquisada, Arquivo arquivo)
+	 
+         CHECK(mostraResultado = (Documento onde possui mais palavras A, isso vai depender dos arquivos escolhidos));
 	  
   }
   
