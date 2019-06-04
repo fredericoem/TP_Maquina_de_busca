@@ -61,7 +61,7 @@ namespace TpFinal
 			//
 			string nomeArquivo;
 
-			//
+			friend class Teste;
 
 	};
 }
