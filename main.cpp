@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 		if(existe)
 		{
 			std::cout << "Palavra existe nos seguintes arquivos: " << std::endl;
-			mostraResultado(resultado);
+			TpFinal::mostraResultado(resultado);
 		}
 		else
 		{
